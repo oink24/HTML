@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>1. 가시속성</title>
+        <!--
+            날짜 : 2023/07/05
+            이름 : 강나은
+            내용 : CSS 가시속성 실습
+
+            가시속성(display)
+             - display:none
+               : 태그요소를 브라우저 화면에서 제거(공간 포함)
+               : visibility:hidden을 사용할 경우 자리공간은 남음
+
+             - display:block
+               : 태그요소를 block형식으로 변환
+               : 세로방향 배치, width/height 적용 가능
+
+             - display:inline
+               : 태그요소를 inline형식으로 변환
+               : 가로방향 배치, width/height 적용 불가
+
+             - display:inline-block
+               : 태그요소를 inline-block 형식으로 변환
+               : 가로방향 배치, width/height 적용 가능
+        -->
+        <style>
+            div > span { background: orange; }
+            div > div { background: green; }
+
+            .box1 > span:nth-child(1) { display: none; }
+            .box1 > span:nth-child(2) { visibility: hidden; }
+
+            .box2 > span:nth-child(2) { /* span은 inline속성이라 크기변경 불가하니까 */
+                display: block; /* block형식으로 변환 */
+                width: 100px;
+                height: 100px;
+            }
+
+            .box3 > div {
+                display: inline;
+                width: 100px;
+                height: 100px;
+            }
+
+            .box4 > div {
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>1. 가시속성</h3>
+
+        <h4>display:none</h4>
+        <div class="box1">
+            <span>TEXT1</span>
+            <span>TEXT2</span>
+            <span>TEXT3</span>
+        </div>
+
+        <h4>display:block</h4>
+        <div class="box2">
+            <span>TEXT1</span>
+            <span>TEXT2</span>
+            <span>TEXT3</span>
+        </div>
+
+        <h4>display:inline</h4>
+        <div class="box3">
+            <span>TEXT1</span>
+            <div>TEXT2</div>
+            <span>TEXT3</span>
+        </div>
+
+        <h4>display:inline-block</h4>
+        <div class="box4">
+            <span>TEXT1</span>
+            <div>TEXT2</div>
+            <span>TEXT3</span>
+        </div>
+    </body>
+</html>
