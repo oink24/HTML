@@ -1,0 +1,155 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px 돋움;
+}
+ul, ol { list-style: none; }
+a { text-decoration: none; color: #111; }
+
+#container {
+    width: 100%;
+    height: auto;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 100px;
+    background-image: url('../images/header_bg.png'); 
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+header > div {
+    position: relative;
+    width: 1000px;
+    height: 100%; /* 부모 height 100px니까 */
+    margin: 0 auto;
+}
+header > div > .gnb {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 28px;
+}
+header > div > .gnb > li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    border-left: 1px solid #fff;
+    box-sizing: border-box;
+}
+header > div > .gnb > li:last-child { border-right: 1px solid #fff; }
+header > div > .gnb > li > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-weight: bold;
+    background: #becedb;
+}
+header > div > p {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+/* main */
+main {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+main > div {
+    width: 100%;
+    height: 620px;
+    margin-top: 24px;
+    background-image: url('../images/main_bg.png');
+}
+main > div > .box {
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+main > div > .box1 {
+    position: relative;
+    background-image: url('../images/main_box1_bg.png');
+}
+main > div > .box1 > img:nth-child(1) { position: absolute; left: 0; top: -25px; }
+main > div > .box1 > img:nth-child(2) { position: absolute; left: 0; top: 6; }
+main > div > .box2 { background-image: url('../images/main_box2_bg.png'); }
+main > div > .box3 { background-image: url('../images/main_box3_bg.png'); }
+main > div > .box4 { background-image: url('../images/main_box4_bg.png'); }
+main > div > .box5 { background-image: url('../images/main_box5_bg.jpg'); clear: left; }
+main > div > .box6 { background-image: url('../images/main_box6_bg.jpg'); }
+main > div > .box7 {
+    background-image: url('../images/main_box7_bg.png');
+    clear: left;
+    margin-left: 200px;
+}
+
+main > div > .box > .tit { position: absolute; left: 25px; top: 30px; }
+main > div > .box > .txt { position: absolute; left: 25px; top: 62px; }
+main > div > .box > .img { position: absolute; left: 12px; top: 100px; }
+main > div > .box3 > img:first-child { position: absolute; left: 31px; top: -2px; }
+main > div > .box7 > img:nth-child(3) { position: absolute; left: 21px; top: 106px; }
+
+main > section {
+    width: 100%;
+    height: 150px;
+}
+
+main > section > article {
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+.info { display: block; padding: 10px 0; padding-top:20px;}
+#gal > a > img {
+    display: inline-block;
+    margin-top: 5px;
+    width: 75px;
+    height: 55px;
+}
+.table tr > td { color: rgb(128, 128, 128); }
+.table tr > td a { 
+    line-height: 18px;
+    color: #555;
+}
+
+
+/* footer */
+footer {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+footer > #address {
+    border-top: 1px solid #b9cadc;
+}
+#address > .logo {
+    float: left;
+    padding-top: 14px;
+}
+
+footer > div > p {
+    font-size: 11px;
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 20px;
+    color: #555;
+    line-height: 20px;
+}
+footer > div > p #copy {
+    display: inline-block;
+    font-family: Verdana;
+    color: rgb(153, 153, 153);
+    padding-top: 4px;
+}
+footer > div > p #resort {
+    color: #5d99b5;
+}
