@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, ol { list-style: none; }
+a { text-decoration: none; color: #111; }
+
+#container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+/* --------------- header --------------- */
+header {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+header > div {
+    width: 100%;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
+header > div > * {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+header > div:nth-child(1) { height: 44px; }
+header > div:nth-child(2) { height: 110px; }
+header > div:nth-child(3) { height: 46px; }
+
+/* --------------- main --------------- */
+main {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+main > section {
+    width: 100%;
+    height: auto;
+    border: 1px solid green;
+    padding: 40px 0;
+    box-sizing: border-box;
+}
+main > section:nth-child(1) {height: 480px;}
+main > section:nth-child(2) {height: auto;}
+main > section:nth-child(3) {height: 620px;}
+main > section:nth-child(4) {height: 220px;}
+main > section:nth-child(5) {height: auto;}
+main > section:nth-child(6) {height: 220px;}
+main > section:nth-child(7) {height: auto;}
+main > section > article {
+    width: 1126px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+.new > article { height: 480px; }
+.new > article > div:nth-child(1) { width: 434px; height: 100%; }
+.new > article > div:nth-child(2) { height: 50%; }
+.new > article > div:nth-child(3) { height: 50%; }
+.new > article > div:nth-child(4) { height: 50%; }
+.new > article > div:nth-child(5) { height: 50%; }
+.new > article > div {
+    width: 345px;
+    float: left;
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+
+.master > article > div {
+    float: left;
+    width: 25%;
+    height: 334px;
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+
+.gallary { overflow: hidden; }
+.gallary > div {
+    width: 25%;
+    height: 400px;
+    float: left;
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+
+/* --------------- footer --------------- */
+footer {
+    width: 100%;
+    height: auto;
+    border: 1px solid blue;
+    box-sizing: border-box;
+}
+footer > div {
+    width: 1126px;
+    height: 210px;
+    margin: 0 auto;
+    border: 1px solid green;
+    box-sizing: border-box;
+}
