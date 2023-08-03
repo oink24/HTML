@@ -3,9 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <title>Dream Jeju</title>
-
-        <!-- 외부 CSS 파일 적용 -->>
+        <!-- 외부 CSS 파일 적용 -->
         <link rel="stylesheet" href="./CSS/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            $(function(){
+                // 슬라이드쇼 구현
+                const slides = $('.slides');
+                let i = 0;
+
+                $('.left').click(function(){
+                    slides.eq(i).animate({'left': '-100%'}, 1000);
+                    i++;
+                    if (i==3)
+                    {
+                        i = 0;
+                    }
+                    slides.eq(i).css('left', '100%').animate({'left': 0}, 1000);
+                })
+
+                $('.right').click(function(){
+                    slides.eq(i).animate({'left': '100%'}, 1000);
+                    i++;
+                    if (i==3)
+                    {
+                        i = 0;
+                    }
+                    slides.eq(i).css('left', '-100%').animate({'left': 0}, 1000);
+                })
+            });
+        </script>
     </head>
     <body>
         <div id="container">
