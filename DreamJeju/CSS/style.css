@@ -132,7 +132,7 @@
     #tabMenu > label > input[type=radio] {
         display: none;
     }
-    #tabMenu > label:first-child {
+    #tabMenu > label.on {
         color: #bb0000;
     }
     #tabMenu > section {
@@ -159,6 +159,11 @@
     }
     #tabMenu > section ul > li {
         margin-bottom: 10px;
+    }
+    #tabMenu article img {
+        float: left;
+        margin-top: 10px;
+        margin-right: 5px;
     }
 
     #links {
